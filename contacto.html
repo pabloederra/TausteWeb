@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- SEO -->
+  <title>Contact · Tauste Town Hall</title>
+  <meta name="description" content="Contact form and relevant information to communicate with the Town Hall or services of the municipality of Tauste.">
+
+  <!-- Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .map {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="inner">
+
+      <div class="brand">
+        <img src="images/tauste-thumb.jpg" alt="Tauste Logo">
+        <div>
+          <h1>Tauste</h1>
+          <p>Zaragoza · Aragón</p>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="historia.html">History</a></li>
+          <li><a href="lugares.html">Places</a></li>
+          <li><a href="servicios.html">Services</a></li>
+          <li><a href="eventos.html">Events</a></li>
+          <li><a href="gastronomia.html">Gastronomy</a></li>
+          <li><a href="rutas.html">Routes</a></li>
+          <li><a href="galeria.html">Gallery</a></li>
+          <li><a href="contacto.html">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+
+    <header>
+      <h2 style="font-size: var(--fs-heading); margin-bottom: 10px;">Contact</h2>
+      <p class="lead">Send us your queries, suggestions or requests through the form.</p>
+    </header>
+
+    <section class="content-with-sidebar" style="margin-top: 24px;">
+
+      <!-- FORM -->
+      <form aria-label="Contact form">
+        <h3 style="font-size: var(--fs-subheading); margin-bottom: 12px;">Contact Form</h3>
+
+        <label for="nombre"><strong>Name:</strong></label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Write your name">
+
+        <label for="email"><strong>Email:</strong></label>
+        <input type="email" id="email" name="email" required placeholder="Ex: user@gmail.com">
+
+        <label for="mensaje"><strong>Message:</strong></label>
+        <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Write your query"></textarea>
+
+        <button type="submit" class="primary" onclick="myClick()">Send message</button>
+      </form>
+
+      <!-- MAP / INFO -->
+      <aside>
+        <h3 style="font-size: var(--fs-subheading);">Contact Information</h3>
+        <p><strong>Address:</strong><br> Plaza Mayor, 1 - Tauste (Zaragoza)</p>
+        <p><strong>Phone:</strong> 976 85 00 00</p>
+        <p><strong>Email:</strong> info@tauste.es</p>
+
+        <h3 style="margin-top: 20px; font-size: var(--fs-subheading);">Location</h3>
+        <img src="images/map-placeholder.jpg" alt="Location of Tauste in Spain" class="map">
+      </aside>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="inner">
+      <small>© 2025 Contact — Academic project</small>
+      <a href="index.html" style="color:#dff6ff; font-weight:600;">Back to home</a>
+    </div>
+  </footer>
+
+  <script>
+  function myClick() {
+    alert("The contact form has been sent.");
+  }
+  </script>
+
+</body>
+</html>
